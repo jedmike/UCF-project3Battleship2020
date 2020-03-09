@@ -1,9 +1,9 @@
 import React from "react"
 import "./style.css"
 
-function FriendCard(props) {
-  const contentClass = props.squareColor.toLowerCase() === "white" ? "cardW" : "cardB"
-  console.log("FriendCard -> contentClass", contentClass)
+function FriendCard2(props) {
+  const contentClass = props.squareColor.toLowerCase() === "white" ? "cardB" : "cardW"
+  console.log("FriendCard2 -> contentClass", contentClass)
   console.log(props)
 
   return (
@@ -14,4 +14,4 @@ function FriendCard(props) {
   )
 }
 
-export default FriendCard
+export default FriendCard2

@@ -1,14 +1,14 @@
-import React, { useState } from "react"
+import React, { useState, useContext } from "react"
 import Wrapper from "./components/Wrapper"
-// import Title from "./components/Title"
+import Title from "./components/Title"
 import FriendCard from "./components/FriendCard"
+import FriendCard2 from "./components/FriendCard2"
 import GameGrid from "./components/GameGrid"
-// import friends from "./friends.json"
 
 function App() {
  
     //#######################################################
-      const rows= [];
+      
       const squares= [];
       const squares2=[];
       const grid = 12;
@@ -38,7 +38,8 @@ function App() {
           
       }
 //#######################################################
-        const [squareColor, setColor] = useState("White")
+        const [squareColor, setColor] = useState("Blue")
+        const [square2Color,setColor2]= useState("White")
 
         const handleClick = e => {
           e.preventDefault()
@@ -47,18 +48,21 @@ function App() {
           e.target.style.background = 'red'}
           else{e.target.style.background = 'green'}
           console.log(`Color ${squareColor}`)
-          setColor(squareColor === "White" ? "White" : "White")
+
+          setColor2(squareColor === "White" ? "White" : "White")
+          setColor(square2Color === "White" ? "Blue" : "White")
       }
 
         
     return (
       <Wrapper>
+      <Title>Firing Grid</Title>
         <GameGrid>
             {squares.map(square => (
                 <FriendCard
                     id={square.cell}
                     key={square.id}
-                    // cell={square.cell}
+                    cell={square.cell}
                     color={square.color}
                     handleClick={handleClick}
                     squareColor={squareColor}
@@ -66,9 +70,11 @@ function App() {
                   />
                 ))}
         </GameGrid>
+        <Title>Ship Grid</Title>
         <GameGrid>
+        
             {squares2.map(square2 => (
-                <FriendCard
+                <FriendCard2
                     id={square2.cell}
                     key={square2.id}
                     // cell={square2.cell}
