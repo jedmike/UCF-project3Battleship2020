@@ -1,6 +1,7 @@
 .cardW {
   background: #fff;
-  border:1px black solid;
+  border:1px blue solid;
+  color: blue;
   font-size:5pt;
   /* border-radius: 1px; */
   height: 25px;
@@ -13,7 +14,8 @@
 
 
 .cardB  {
-  background: rgb(12, 9, 197);
+  background: blue ;
+  border:1px white solid;
   color: white;
   text-align: center;
   font-size:5pt;
@@ -25,6 +27,21 @@
   /* box-shadow: 0 3px 6px #999, 0 3px 6px #999; */
   text-align: center;
 }
+
+.cardT  {
+  background:teal;
+  color: white;
+  text-align: center;
+  font-size:5pt;
+  /* border-radius: 1px; */
+  height: 25px;
+  margin: 0px;
+  position: relative;
+  width: 25px;
+  /* box-shadow: 0 3px 6px #999, 0 3px 6px #999; */
+  text-align: center;
+}
+
 
 /* .card >.body{
   height:25px;

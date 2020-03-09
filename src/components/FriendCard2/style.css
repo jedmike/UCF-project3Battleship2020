@@ -1,6 +1,7 @@
 .cardW {
   background: #fff;
-  border:1px black solid;
+  border:1px blue solid;
+  color: blue;
   font-size:5pt;
   /* border-radius: 1px; */
   height: 25px;
@@ -13,7 +14,8 @@
 
 
 .cardB  {
-  background: rgb(12, 9, 197);
+  background: blue ;
+  border:1px blue solid;
   color: white;
   text-align: center;
   font-size:5pt;
