@@ -1,6 +1,7 @@
 .wrapper2 {
+  margin: 10px 50px 20px 200px;;
   padding-top: 50px;
-  /* padding: 50px; */
+  border: 1px solid black;
   background: rgb(92, 92, 85);
   height: 720px;
   display: flex;
