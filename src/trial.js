@@ -1,7 +1,20 @@
+    const squares= [];
+      const squares2=[];
+      const grid = 12;
+      const numSq= grid*grid;
+     
 
-const string= 'F23';
-const regx =/^F/gi
-console.log(string.match(regx))
-// if (string.match(regx))  = ["F"]) {
-//   console.log('a')
-// }
+      for (let i = 0; i < numSq; i++) {
+          
+          squares.push({
+              key: i,
+              id:  i,
+              hit: 'false',
+              color: 'cardB',
+              cell: 'F'+i,
+              // shot: "null",
+              // ship: "null"
+          });
+
+          
+

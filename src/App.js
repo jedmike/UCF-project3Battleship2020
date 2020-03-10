@@ -58,12 +58,16 @@ function App() {
           console.log(string)
           const regx =/^F/gi
           if ((string.match(regx)) == 'F' ){
-            // const deployFGridCopy =[...deployFGrid]
-            // console.log([deployFGridCopy])
-       
+          const deployFGridCopy =[...deployFGrid]
+          console.log([deployFGridCopy])
+          // let obj = arr.find(o => o.name === 'string 1');
+          const match = deployFGridCopy.find(square => square.cell === string);
 
 
+          setDeployFGrid(deployFGridCopy)
+          console.log(match);
           console.log('Firing');
+
          }
           else{console.log('Deploying')}
           // console.log(`Color ${squarecolor}`)
