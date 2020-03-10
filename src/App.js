@@ -90,6 +90,7 @@ function App() {
                     return true
                   }
                   });
+          setDeploySGrid(deploySGridCopy)
           }
 
           
