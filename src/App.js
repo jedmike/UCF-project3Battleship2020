@@ -60,20 +60,24 @@ function App() {
           if ((string.match(regx)) == 'F' ){
           const deployFGridCopy =[...deployFGrid]
           console.log([deployFGridCopy])
-          // let obj = arr.find(o => o.name === 'string 1');
-          const match = deployFGridCopy.find(square => square.cell === string);
+          const match = deployFGridCopy.find((square, i) => {
+              if (square.cell === string) {
+                    console.log(square.cell) 
+                    console.log(square.color)
+                    square.color="cardW"
+                    return true
+                  }
+                  });
 
-
-          setDeployFGrid(deployFGridCopy)
-          console.log(match);
           console.log('Firing');
-
-         }
-          else{console.log('Deploying')}
-          // console.log(`Color ${squarecolor}`)
-       
+          setDeployFGrid(deployFGridCopy)}
+          else{console.log('Error')}
 
 
+
+
+
+          
       }
    
    
