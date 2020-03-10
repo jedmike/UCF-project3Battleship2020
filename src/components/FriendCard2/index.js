@@ -2,8 +2,9 @@ import React from "react"
 import "./style.css"
 
 function FriendCard2(props) {
-   const contentClass = props.squareColor === "White" ? "cardB" : "cardW"
+   const contentClass = props.color 
   // console.log("FriendCard2 -> contentClass", contentClass)
+  // console.log('^^^^^^^^^^^^^^^^^^^')
   // console.log(props.id)
 
   return (
