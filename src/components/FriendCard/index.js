@@ -3,7 +3,7 @@ import "./style.css"
 
 function FriendCard(props) {
   const contentClass = props.color 
-  console.log(props.color)
+  console.log('ComponentF passed:'+ props.color)
   // console.log("FriendCard -> contentClass", contentClass)
   // console.log("********")
   // console.log(props.color)

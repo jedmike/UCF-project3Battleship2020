@@ -52,14 +52,19 @@ function App() {
         
         const handleClick = e => {
           e.preventDefault()
+          const deployFGridCopy =[...deployFGrid]
+          const deploySGridCopy =[...deploySGrid]
           // console.log('########################################')
           // console.log(e)
           const string = (e.target.id)
           console.log(string)
           const regx =/^F/gi
+
+
           if ((string.match(regx)) == 'F' ){
-          const deployFGridCopy =[...deployFGrid]
           console.log([deployFGridCopy])
+          console.log('Firing')
+
           const match = deployFGridCopy.find((square, i) => {
               if (square.cell === string) {
                     console.log(square.cell) 
@@ -69,13 +74,23 @@ function App() {
                   }
                   });
 
-          console.log('Firing');
           setDeployFGrid(deployFGridCopy)}
-          else{console.log('Error')}
+          
+          else  {console.log('Ship location Set') 
+         
+          console.log([deploySGridCopy])
+          console.log('Ship Deploying')
 
-
-
-
+          const match = deploySGridCopy.find((square2, i) => {
+              if (square2.cell === string) {
+                    console.log(square2.cell) 
+                    console.log(square2.color)
+                    square2.color="cardB"
+                    console.log(square2.color)
+                    return true
+                  }
+                  });
+          }
 
           
       }
