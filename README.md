@@ -1,5 +1,18 @@
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+## This project is created with REACT on the frontend and Express on the backent
+It Utilizes the Mongo Database
+<br>
+It is a 2 player implementation of the Classic game Battleship.
+Grid size is configurable, default is a 12x12 grid for shots and ships.
+Chat is supported.
+<br>
+Game player history is kept.
+<br>
+Goto the Github repo](https://github.com/jedmike/UCF-project3Battleship2020
+<br>
+[Play the Game! ](https://bs2020.herokuapp.com)
+
 ## Available Scripts
 
 In the project directory, you can run:
