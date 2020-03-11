@@ -15,7 +15,37 @@
 
 .cardB  {
   background: blue ;
-  border:1px blue solid;
+  border:1px white solid;
+  color: white;
+  text-align: center;
+  font-size:5pt;
+  /* border-radius: 1px; */
+  height: 25px;
+  margin: 0px;
+  position: relative;
+  width: 25px;
+  /* box-shadow: 0 3px 6px #999, 0 3px 6px #999; */
+  text-align: center;
+}
+
+..cardR {
+  background:red ;
+  border:1px white solid;
+  color: white;
+  text-align: center;
+  font-size:5pt;
+  /* border-radius: 1px; */
+  height: 25px;
+  margin: 0px;
+  position: relative;
+  width: 25px;
+  /* box-shadow: 0 3px 6px #999, 0 3px 6px #999; */
+  text-align: center;
+}
+
+.cardG  {
+  background: rgb(7, 165, 54) ;
+  border:1px white solid;
   color: white;
   text-align: center;
   font-size:5pt;

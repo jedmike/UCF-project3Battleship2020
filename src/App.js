@@ -5,6 +5,8 @@ import FriendCard from "./components/FriendCard"
 import FriendCard2 from "./components/FriendCard2"
 import GameGrid from "./components/GameGrid"
 
+
+
 function App() {
  
     //#######################################################
@@ -40,8 +42,7 @@ function App() {
           
       }
 //#######################################################
-        // const [squareColor, setColor] = useState("Blue")
-        // const [square2Color,setColor2]= useState("White")
+
         const [squareHit,setHit]= useState("false")
         const [square2Ship,setShip]= useState("false")
         const [deployFGrid,setDeployFGrid] =useState(squares)
@@ -69,7 +70,7 @@ function App() {
               if (square.cell === string) {
                     console.log(square.cell) 
                     console.log(square.color)
-                    square.color="cardW"
+                    square.color="cardR"
                     return true
                   }
                   });
@@ -85,7 +86,7 @@ function App() {
               if (square2.cell === string) {
                     console.log(square2.cell) 
                     console.log(square2.color)
-                    square2.color="cardB"
+                    square2.color="cardG"
                     console.log(square2.color)
                     return true
                   }
@@ -100,6 +101,7 @@ function App() {
     return(
       <Wrapper> 
         <GameGrid>
+       
         <Title>Fire Grid</Title>
        
             {deployFGrid.map(square => (
